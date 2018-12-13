@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <!-- bergi -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <!-- bergi -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
+            <!-- bergi -->
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/logo"
                 app:srcCompat="@drawable/logo" />
-
+            <!-- bergi -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -28,8 +28,17 @@
                 android:text="@string/test"
                 android:textStyle="bold"
                 app:fontFamily="@font/aladin" />
-        </RelativeLayout>
 
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Razpored"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+            <!-- smrkol -->
+        </RelativeLayout>
+        <!-- bergi -->
     </ScrollView>
 
 </RelativeLayout>
