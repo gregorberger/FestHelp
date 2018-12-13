@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/dnevneAktivnosti"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/dnevne_aktivnosti"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/yellow"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dnevneAktivnosti">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dnevniDogodki1"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@string/dnevniDogodek1"
+                android:src="@drawable/dnevni_dogodki1"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textDnevniDogodki1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dnevniDogodki1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/dnevnoDogajanje"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/dnevniDogodki2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/textDnevniDogodki1"
+                android:layout_marginVertical="10dp"
+                android:contentDescription="@string/dnevniDogodek2"
+                android:src="@drawable/dnevni_dogodki2" tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textDnevniDogodki2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dnevniDogodki2"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/textDnevniDogodki2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/dnevniDogodki3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/textDnevniDogodki2"
+                android:contentDescription="@string/dnevniDogodek3"
+                android:src="@drawable/dnevni_dogodki3" />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
