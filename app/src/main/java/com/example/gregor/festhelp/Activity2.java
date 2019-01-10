@@ -5,7 +5,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Activity2 extends AppCompatActivity {
@@ -15,7 +14,7 @@ public class Activity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_urnik);
         myDb =new DatabaseHelper(this);
         show_t =(ImageButton) findViewById(R.id.show_t);
         show_t.setOnClickListener(new View.OnClickListener() {

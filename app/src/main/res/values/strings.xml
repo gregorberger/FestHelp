@@ -6,7 +6,7 @@
     <string name="nastopajoci">Nastopajoci</string>
     <string name="festhelpSupport">FestHelp Kontakt</string>
     <string name="gumbPoslji">Pošlji</string>
-    <string name="Vase_sporocilo">Vaše sporočilo</string>
+    <string name="Vase_sporocilo">Vaše sporočilo:</string>
     <string name="vasEmail">Vaš email:</string>
     <string name="dnevne_aktivnosti">Dnevne aktivnosti</string>
     <string name="dnevnoDogajanje">Pestro dnevno dogajanje bo otvoril protokolarni del s tradicionalnim mimohodom študentskih klubov in uradno otvoritvijo s pozdravnimi nagovori. Popoldanski del prireditve, ki sledi uradnemu odprtju, bo poleg študentskih klubov, popestril pester spremljevalni program. Za vse pogumne smo letos pripravili novost, in sicer obratni bungee (ang. reverse bungee jumping), športni navdušenci se bodo lahko preizkusili v nogometu na milnici, študentski klubi se bodo med seboj pomerili v regijskem tekmovanju, na sedmem otočku Škisove tržnice – Mednarodnem otoku (ang. International Ocean) pa bo mogoče začutiti tudi pridih tujine.</string>
@@ -14,5 +14,18 @@
     <string name="dnevniDogodek2">slikaDnevnegaDogodka2</string>
     <string name="textDnevniDogodki2">Osrednjo nit Škisove tržnice že 21 let predstavljajo študentski klubi iz cele Slovenije, ki se v popoldanskih urah predstavijo obiskovalcem. Letos se bo na Škisovi tržnici predstavilo 57 študentskih klubov, ki zastopajo osrednjo, dolenjsko, primorsko, gorenjsko ter 02 in 03 regijo. Na stojnicah, ki so razporejene po Kardeljevi ploščadi, obiskovalcem ponujajo okusne kulinarične specialitete, pokrajinske posebnosti in običaje, ki so značilni za okolje, iz katerega prihajajo. Prav pestra kulinarična ponudba na klubskih stojnicah, je ena izmed posebnosti, s katero Škisova tržnica ohranja poseben status med študentskimi prireditvami.</string>
     <string name="dnevniDogodek3">slikaDnevnegaDogodka3</string>
+    <string name="skisovaTrzina">ŠKISOVA TRŽNICA</string>
+    <string name="sziget">SZIGET</string>
+    <string name="ultra">ULTRA</string>
+    <string name="nocneAktivnosti" />
+    <string name="NocneAktivnosti">Nočne aktivnosti</string>
+    <string name="oPrireditvi"><u>O PRIREDITVI</u></string>
+    <string name="sponzorji"><u>SPONZORJI</u></string>
+    <string name="home">Home</string>
+    <string name="urnik">Urnik</string>
+    <string name="mapa">Mapa</string>
+    <string name="hrana">Hrana</string>
+    <string name="kontakt">Kontakt</string>
+    <string name="Domov">Domov</string>
 
 </resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_container"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/background"
+        android:layout_above="@id/bottom_navigation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/skisovaLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_belo_ozadje"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/zacetek"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:layout_below="@id/skisovaLogo"
+                android:src="@drawable/zacetek"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@id/zacetek">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/oPrireditvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewpager"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/oPrireditvi"
+                android:textColor="@color/boldBlue"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:text="@string/oPrireditvi" />
+            <TextView
+                android:id="@+id/oPrireditviText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/oPrireditvi"
+                android:text="@string/test"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="2sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                tools:text="@string/test" />
+
+            <TextView
+                android:id="@+id/sponzorji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oPrireditviText"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/sponzorji"
+                android:textColor="@color/boldBlue"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:text="@string/sponzorji" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager2"
+                android:layout_below="@id/sponzorji"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"/>
+
+</RelativeLayout>
+

@@ -1,100 +1,66 @@
 package com.example.gregor.festhelp;
 
-import android.content.Intent;
-
-import android.database.Cursor;
-import android.support.v7.app.AlertDialog;
-
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.view.MenuItem;
 
-
-import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
-    DatabaseHelper myDb;
 
-    private Button button;
-    Button show_t;
+    private HomeFragment homeFragment;
+    private SupportFragment supportFragment;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_skisova_main);
 
-        setContentView(R.layout.activity_main);
-        myDb=new DatabaseHelper(this);
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity2();
+        homeFragment = new HomeFragment();
+        supportFragment = new SupportFragment();
+
+
+        // Spodnji menu (zbere fragment k je zbran)
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
+
+        //Prvo nalozi homeFragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, homeFragment).commit();
+    }
+
+    // Spodnji menu
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
+
+            switch (item.getItemId()) {
+                case R.id.nav_home:
+                    selectedFragment = homeFragment;
+                    break;
+
+                case R.id.nav_urnik:
+                    selectedFragment = new EventFragment();
+                    break;
+
+                case R.id.nav_kontakt:
+                    selectedFragment = supportFragment;
+                    break;
             }
-        });
-    }
-    public void openActivity2()
-    {
-        Intent intent = new Intent(this, Activity2.class);
-        startActivity(intent);
-    }
 
-        setContentView(R.layout.activity_support);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
 
-
-//        ((Button) findViewById(R.id.kontakt)).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.activity_support);
-//
-//
-//                String to = "festhelpsupport@gmail.com";
-//                String sub = ((EditText)findViewById(R.id.kontaktEmailNaslov)).getText().toString();
-//                String mess = ((EditText)findViewById(R.id.kontaktSporocilo)).getText().toString();
-//                Intent mail = new Intent(Intent.ACTION_SEND);
-//                mail.putExtra(Intent.EXTRA_EMAIL,new String[]{to});
-//                mail.putExtra(Intent.EXTRA_SUBJECT, sub);
-//                mail.putExtra(Intent.EXTRA_TEXT, mess);
-//                mail.setType("message/rfc822");
-//                startActivity(Intent.createChooser(mail, "Send email via:"));
-//
-//
-//
-//            }
-//        });
-
-
-
-    }
-
-//    @Override
-//    public void onBackPressed() {
-//        setContentView(R.layout.activity_main);
-//
-//
-//        ((Button) findViewById(R.id.kontakt)).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.activity_support);
-//
-//                String to = "festhelpsupport@gmail.com";
-//                String sub = ((EditText)findViewById(R.id.kontaktEmailNaslov)).getText().toString();
-//                String mess = ((EditText)findViewById(R.id.kontaktSporocilo)).getText().toString();
-//                Intent mail = new Intent(Intent.ACTION_SEND);
-//                mail.putExtra(Intent.EXTRA_EMAIL,new String[]{to});
-//                mail.putExtra(Intent.EXTRA_SUBJECT, sub);
-//                mail.putExtra(Intent.EXTRA_TEXT, mess);
-//                mail.setType("message/rfc822");
-//                startActivity(Intent.createChooser(mail, "Send email via:"));
-//
-//
-//
-//            }
-//        });
-
-
-//    }
-
-
+            return true;
+        }
+    };
 
 }
+
+
+
+

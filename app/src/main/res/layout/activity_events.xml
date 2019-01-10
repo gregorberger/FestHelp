@@ -21,7 +21,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/dnevneAktivnosti">
+        android:layout_below="@id/dnevneAktivnosti"
+        android:layout_above="@id/bottom_navigation">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -29,9 +30,9 @@
 
             <ImageView
                 android:id="@+id/dnevniDogodki1"
-                android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
+                android:layout_marginVertical="10dp"
                 android:contentDescription="@string/dnevniDogodek1"
                 android:src="@drawable/dnevni_dogodki1"
                 tools:targetApi="o" />
@@ -52,7 +53,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/dnevniDogodki2"
@@ -61,7 +62,8 @@
                 android:layout_below="@id/textDnevniDogodki1"
                 android:layout_marginVertical="10dp"
                 android:contentDescription="@string/dnevniDogodek2"
-                android:src="@drawable/dnevni_dogodki2" tools:targetApi="o" />
+                android:src="@drawable/dnevni_dogodki2"
+                tools:targetApi="o" />
 
             <TextView
                 android:id="@+id/textDnevniDogodki2"
@@ -74,7 +76,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/dnevniDogodki3"
@@ -84,11 +86,29 @@
                 android:contentDescription="@string/dnevniDogodek3"
                 android:src="@drawable/dnevni_dogodki3" />
 
+            <Button
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dnevniDogodki3"
+                android:layout_marginLeft="130dp"
+                android:text="@string/NocneAktivnosti"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp" />
+
 
         </RelativeLayout>
 
 
-
     </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"/>
 
 </RelativeLayout>
