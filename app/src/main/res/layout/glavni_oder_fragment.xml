@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/mrfyUra"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/kokosyUra"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/jokerUra"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/boUra"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/jacksonUra"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/vladoUra"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="345dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/janUra"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/siddUra"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/peroUra"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="505dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/popUra"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/mrfy"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/kokosy"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/joker"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/bo"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/jackson"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/vlado"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="345dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/jan"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/sidd"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/pero"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="505dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/pop"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+
+
+
+</RelativeLayout>
