@@ -20,10 +20,10 @@
 
             <ImageView
                 android:id="@+id/skisovaLogo"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="200dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/logo_belo_ozadje"
+                android:src="@drawable/logo"
                 android:layout_marginTop="10dp"/>
 
             <ImageView
@@ -39,15 +39,41 @@
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
-                android:layout_below="@id/zacetek">
+                android:layout_below="@id/zacetek"
+                >
 
             </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/vstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewpager"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/vstop"
+                android:textColor="@color/boldBlue"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/vstopSlika"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_below="@id/vstop"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/vstop"
+                android:scaleType="fitCenter"
+                />
 
             <TextView
                 android:id="@+id/oPrireditvi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/viewpager"
+                android:layout_below="@id/vstopSlika"
                 android:layout_marginStart="100dp"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="15dp"

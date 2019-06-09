@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan">
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +25,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Activity2"></activity>
+        <activity android:name=".DnevniActivity"></activity>
+        <activity android:name=".NocniActivity"></activity>
 
     </application>
 

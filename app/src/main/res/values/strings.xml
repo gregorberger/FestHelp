@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">FestHelp</string>
-    <string name="test">Že 21. leto zapovrstjo Zveza študentskih klubov Slovenije (Zveza ŠKIS) pripravlja Škisovo tržnico, največjo kulturno-zabavno prireditev za mlade, ki temelji na promociji slovenske kulture in kulinarike, s pestrim popoldanskim ter večernim programom pa skrbi za dobro vzdušje in zabavo obiskovalcev.  57 študentskih klubov na tržnici predstavi svoje delovanje ter posebnosti in značilnosti kraja, iz katerega prihajajo.  V popoldanskem delu prireditve se obiskovalci lahko sprehodijo med klubskimi stojnicami ter spoznajo različne okuse in narečja Slovenije, se družijo in zabavajo ob odlični glasbi, predvsem pa občutijo utrip mladosti in študentskega aktivizma.  Škisova tržnica vsako leto gosti uveljavljena imena slovenske in tuje glasbene scene, priložnost pa dobijo tudi še neuveljavljene perspektivne glasbene skupine.  Pomemben del Škisove tržnice je njena mednarodna komponenta. Mladi predstavniki tujih držav so združeni na Mednarodnem otočku, kjer kulinarične dobrote in zanimivosti iz tujine predstavijo študenti iz zamejstva.  Z namenom promocije solidarnosti ter medsebojne pomoči organizatorji v kulturno-zabavno dogajanje vsako leto vnašajo dobrodelno noto. V želji po spodbujanju okoljske odgovornosti med mladimi so že pred leti pričeli tudi z ekološko usmeritvijo. Danes Škisova tržnica ni znana zgolj po svojem kulturnem in zabavnem konceptu, temveč tudi kot prva EKO prireditev za mlade v Sloveniji, ki s sprotnim ločevanjem, stiskanjem in odvažanjem odpadkov ohranja prizorišče čisto.  Prireditev se je od svoje prve upodobitve pojavila na več lokacijah po Ljubljani. Letos bodo študentski klubi svoje stojnice postavili v mesecu maju, na travnati zelenici Kardeljeve ploščadi za Bežigradom. Že 21. leto zapovrstjo Zveza študentskih klubov Slovenije (Zveza ŠKIS) pripravlja Škisovo tržnico, največjo kulturno-zabavno prireditev za mlade, ki temelji na promociji slovenske kulture in kulinarike, s pestrim popoldanskim ter večernim programom pa skrbi za dobro vzdušje in zabavo obiskovalcev.  57 študentskih klubov na tržnici predstavi svoje delovanje ter posebnosti in značilnosti kraja, iz katerega prihajajo.  V popoldanskem delu prireditve se obiskovalci lahko sprehodijo med klubskimi stojnicami ter spoznajo različne okuse in narečja Slovenije, se družijo in zabavajo ob odlični glasbi, predvsem pa občutijo utrip mladosti in študentskega aktivizma.  Škisova tržnica vsako leto gosti uveljavljena imena slovenske in tuje glasbene scene, priložnost pa dobijo tudi še neuveljavljene perspektivne glasbene skupine.  Pomemben del Škisove tržnice je njena mednarodna komponenta. Mladi predstavniki tujih držav so združeni na Mednarodnem otočku, kjer kulinarične dobrote in zanimivosti iz tujine predstavijo študenti iz zamejstva.  Z namenom promocije solidarnosti ter medsebojne pomoči organizatorji v kulturno-zabavno dogajanje vsako leto vnašajo dobrodelno noto. V želji po spodbujanju okoljske odgovornosti med mladimi so že pred leti pričeli tudi z ekološko usmeritvijo. Danes Škisova tržnica ni znana zgolj po svojem kulturnem in zabavnem konceptu, temveč tudi kot prva EKO prireditev za mlade v Sloveniji, ki s sprotnim ločevanjem, stiskanjem in odvažanjem odpadkov ohranja prizorišče čisto.  Prireditev se je od svoje prve upodobitve pojavila na več lokacijah po Ljubljani. Letos bodo študentski klubi svoje stojnice postavili v mesecu maju, na travnati zelenici Kardeljeve ploščadi za Bežigradom.</string>
+    <string name="test">Že 22. leto zapovrstjo Zveza študentskih klubov Slovenije (Zveza ŠKIS) pripravlja Škisovo tržnico, največjo kulturno-zabavno prireditev za mlade, ki temelji na promociji slovenske kulture in kulinarike, s pestrim popoldanskim ter večernim programom pa skrbi za dobro vzdušje in zabavo obiskovalcev.</string>
     <string name="logo">logo</string>
 
     <string name="nastopajoci">Nastopajoci</string>
     <string name="festhelpSupport">FestHelp Kontakt</string>
     <string name="gumbPoslji">Pošlji</string>
     <string name="Vase_sporocilo">Vaše sporočilo:</string>
-    <string name="vasEmail">Vaš email:</string>
+    <string name="zadeva">Zadeva:</string>
     <string name="dnevne_aktivnosti">Dnevne aktivnosti</string>
     <string name="dnevnoDogajanje">Pestro dnevno dogajanje bo otvoril protokolarni del s tradicionalnim mimohodom študentskih klubov in uradno otvoritvijo s pozdravnimi nagovori. Popoldanski del prireditve, ki sledi uradnemu odprtju, bo poleg študentskih klubov, popestril pester spremljevalni program. Za vse pogumne smo letos pripravili novost, in sicer obratni bungee (ang. reverse bungee jumping), športni navdušenci se bodo lahko preizkusili v nogometu na milnici, študentski klubi se bodo med seboj pomerili v regijskem tekmovanju, na sedmem otočku Škisove tržnice – Mednarodnem otoku (ang. International Ocean) pa bo mogoče začutiti tudi pridih tujine.</string>
     <string name="dnevniDogodek1">slikaDnevnegaDogodka</string>
@@ -27,5 +27,45 @@
     <string name="hrana">Hrana</string>
     <string name="kontakt">Kontakt</string>
     <string name="Domov">Domov</string>
+    <string name="racunString">Račun</string>
+    <string name="vstop"><u>Vstop</u></string>
+    <string name="vecerne_aktivnosti">Večerne aktivnosti</string>
+    <string name="vecerne_aktivnosti2">Vecerne aktivnosti</string>
+    <string name="Nazaj">nazaj</string>
+    <string name="nazaj">Nazaj</string>
+    <string name="mrfyUra">17:10 - 17:45</string>
+    <string name="mrfy">MRFY</string>
+    <string name="kokosyUra">18:00 - 18:15</string>
+    <string name="kokosy">KOKOSY</string>
+    <string name="jokerUra">18:25 - 18:45</string>
+    <string name="joker">JOKER OUT</string>
+    <string name="boUra">18:55 - 19:15</string>
+    <string name="bo">BO!</string>
+    <string name="jacksonUra">19:25 - 19:50</string>
+    <string name="jackson">JACKSON</string>
+    <string name="vladoUra">20:05 – 20:55</string>
+    <string name="vlado">VLADO KRESLIN</string>
+    <string name="janUra">21:10 – 22:25</string>
+    <string name="jan">JAN PLESTENJAK</string>
+    <string name="siddUra">22:40 – 23:55</string>
+    <string name="sidd">SIDDHARTA</string>
+    <string name="pero">PERO LOVŠIN</string>
+    <string name="pop">POP DESIGN</string>
+    <string name="peroUra">00:10 – 00:50</string>
+    <string name="popUra">01:05 – 01:45</string>
+    <string name="chummaUra">16:00 – 17:15</string>
+    <string name="kralUra">17:15 – 18:30</string>
+    <string name="supersetUra">18:30 – 19:30</string>
+    <string name="clayUra">19:30 – 21:00</string>
+    <string name="kostaUra">21:00 – 23:00</string>
+    <string name="dynoroUra">23:00 – 00:30</string>
+    <string name="plasticUra">00:30 – 01:50</string>
+    <string name="chumma">DJ CHUMMA</string>
+    <string name="kral">KRAL</string>
+    <string name="superset">SUPERSET</string>
+    <string name="clay">CLAY CLEMENS</string>
+    <string name="kosta">KOSTA RADMAN</string>
+    <string name="dynoro">DYNORO</string>
+    <string name="plastic">PLASTIC FUNK</string>
 
 </resources>

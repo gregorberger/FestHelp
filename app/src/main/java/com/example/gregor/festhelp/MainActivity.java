@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
     private HomeFragment homeFragment;
     private SupportFragment supportFragment;
+    private EventFragment eventFragment;
+    private MapaFragment mapaFragment;
+    private RacunFragment racunFragment;
 
 
     @Override
@@ -23,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         homeFragment = new HomeFragment();
         supportFragment = new SupportFragment();
-
+        eventFragment = new EventFragment();
+        mapaFragment = new MapaFragment();
+        racunFragment = new RacunFragment();
 
         // Spodnji menu (zbere fragment k je zbran)
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
@@ -45,11 +50,19 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.nav_urnik:
-                    selectedFragment = new EventFragment();
+                    selectedFragment = eventFragment;
                     break;
 
                 case R.id.nav_kontakt:
                     selectedFragment = supportFragment;
+                    break;
+
+                case R.id.nav_mapa:
+                    selectedFragment = mapaFragment;
+                    break;
+
+                case R.id.nav_račun:
+                    selectedFragment = racunFragment;
                     break;
             }
 
