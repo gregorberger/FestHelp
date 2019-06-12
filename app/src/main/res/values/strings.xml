@@ -68,4 +68,12 @@
     <string name="dynoro">DYNORO</string>
     <string name="plastic">PLASTIC FUNK</string>
 
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">sd2ycaF1RweCXj8BWD4pK4iU0AFZ3RoaPMNW08pS</string>
+    <string name="back4app_client_key">iVdMR6Hm33HlllNUvB0yRa0PUEGuf3NoJAxAmrCX</string>
+    <string name="osnovni_podatki"><u>Osnovni podatki</u></string>
+
 </resources>

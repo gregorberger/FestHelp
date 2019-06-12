@@ -21,10 +21,11 @@
             <ImageView
                 android:id="@+id/skisovaLogo"
                 android:layout_width="400dp"
-                android:layout_height="200dp"
+                android:layout_height="220dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/logo"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                />
 
             <ImageView
                 android:id="@+id/zacetek"

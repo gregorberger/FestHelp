@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParseUser;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private SupportFragment supportFragment;
     private EventFragment eventFragment;
     private MapaFragment mapaFragment;
+    private VpisFragment vpisFragment;
     private RacunFragment racunFragment;
 
 
@@ -22,12 +25,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId(getString(R.string.back4app_app_id))
+                // if defined
+                .clientKey(getString(R.string.back4app_client_key))
+                .server(getString(R.string.back4app_server_url))
+                .build()
+        );
+        // Steje instalacije back4app
+        ParseInstallation.getCurrentInstallation().saveInBackground();
         setContentView(R.layout.activity_skisova_main);
 
         homeFragment = new HomeFragment();
         supportFragment = new SupportFragment();
         eventFragment = new EventFragment();
         mapaFragment = new MapaFragment();
+        vpisFragment = new VpisFragment();
         racunFragment = new RacunFragment();
 
         // Spodnji menu (zbere fragment k je zbran)
@@ -62,7 +75,17 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.nav_račun:
-                    selectedFragment = racunFragment;
+                    ParseUser currentUser = ParseUser.getCurrentUser();
+                    if (currentUser != null) {
+                        // ce je ze vpisan
+                        selectedFragment = racunFragment;
+
+                    } else {
+                        // ce se ni vpisan se naj vpise/registrera
+                        selectedFragment = vpisFragment;
+
+                    }
+                    //selectedFragment = racunFragment;
                     break;
             }
 

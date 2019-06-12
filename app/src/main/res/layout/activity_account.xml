@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_above="@+id/bottom_navigation">
+
+    <TextView
+        android:id="@+id/racunText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Racun"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:textSize="60sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/yellow"/>
+
+
+    <TextView
+        android:id="@+id/osnovniPodatki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/osnovni_podatki"
+        android:textAlignment="center"
+        android:layout_marginTop="75dp"
+        android:textSize="50sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/yellow"/>
+
+
+    <TextView
+        android:id="@+id/uporabniskoImeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uporabniško ime"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/uporabniskoIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(ime)"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/stanjeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stanje"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/stanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(stanje)"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        app:fontFamily="@font/aladin"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/racunOdjava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/rounded_button"
+        android:text="Odjava"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>
