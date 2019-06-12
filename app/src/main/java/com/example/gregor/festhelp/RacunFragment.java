@@ -34,7 +34,6 @@ public class RacunFragment extends Fragment {
 
         mHandler = new Handler();
         TextView uporabniskoIme = (TextView) v.findViewById(R.id.uporabniskoIme);
-        TextView stanje = (TextView) v.findViewById(R.id.stanje);
         Button odjava = (Button) v.findViewById(R.id.racunOdjava);
         final ParseUser currentUser = ParseUser.getCurrentUser();
 
@@ -51,6 +50,8 @@ public class RacunFragment extends Fragment {
                       fragmentTransaction2.addToBackStack("xyz");
                       fragmentTransaction2.hide(RacunFragment.this);
                       fragmentTransaction2.replace(R.id.fragment_container, vpisFragment).commit();
+
+
                       new AlertDialog.Builder(getContext())
                               .setTitle("Odjava uspešna")
                               .setMessage("Uspešno ste odjavili uporabnika: " + currentUser.getUsername())

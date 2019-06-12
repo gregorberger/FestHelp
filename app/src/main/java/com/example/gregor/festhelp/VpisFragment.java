@@ -85,27 +85,6 @@ public class VpisFragment extends Fragment {
         return v;
     }
 
-    void userRegister(final String username, final String password){
-        if (ParseUser.getCurrentUser() != null) {
-            ParseUser.getCurrentUser().logOut();
-        }
-        ParseUser user = new ParseUser();
-        user.setUsername(username);
-        user.setPassword(password);
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(ParseException e) {
-                if (e == null) {
-                    progressDialog.dismiss();
-                    alertDisplayer("Registracija usešna", "Uporabniško ime: " + username);
-                } else {
-                    progressDialog.dismiss();
-                    alertDisplayer("Registranija ni bila uspešna.", e.getMessage()+" Prosim probajte ponovno.");
-                }
-            }
-        });
-    }
-
 
     void userLogin(String username, String password) {
         ParseUser.logInInBackground(username, password, new LogInCallback() {

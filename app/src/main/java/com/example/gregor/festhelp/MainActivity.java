@@ -82,10 +82,9 @@ public class MainActivity extends AppCompatActivity {
 
                     } else {
                         // ce se ni vpisan se naj vpise/registrera
-                        selectedFragment = vpisFragment;
+                        selectedFragment = new VpisFragment();
 
                     }
-                    //selectedFragment = racunFragment;
                     break;
             }
 
