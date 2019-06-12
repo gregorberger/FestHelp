@@ -47,17 +47,16 @@
 
             <TextView
                 android:id="@+id/vstop"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/viewpager"
-                android:layout_marginStart="160dp"
-                android:layout_marginLeft="200dp"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:text="@string/vstop"
                 android:textColor="@color/boldBlue"
                 android:textSize="36sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/aladin"
                 />
 
             <ImageView
@@ -72,17 +71,17 @@
 
             <TextView
                 android:id="@+id/oPrireditvi"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/vstopSlika"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:text="@string/oPrireditvi"
                 android:textColor="@color/boldBlue"
                 android:textSize="36sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/aladin"
+
                 tools:text="@string/oPrireditvi" />
             <TextView
                 android:id="@+id/oPrireditviText"
@@ -105,17 +104,16 @@
 
             <TextView
                 android:id="@+id/sponzorji"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/oPrireditviText"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:text="@string/sponzorji"
                 android:textColor="@color/boldBlue"
                 android:textSize="36sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/aladin"
                 tools:text="@string/sponzorji" />
 
             <android.support.v4.view.ViewPager

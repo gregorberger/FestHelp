@@ -15,8 +15,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.parse.GetCallback;
 import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 public class RacunFragment extends Fragment {
 
@@ -28,10 +32,12 @@ public class RacunFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_account, container, false);
 
-        mHandler=new Handler();
+        mHandler = new Handler();
         TextView uporabniskoIme = (TextView) v.findViewById(R.id.uporabniskoIme);
+        TextView stanje = (TextView) v.findViewById(R.id.stanje);
         Button odjava = (Button) v.findViewById(R.id.racunOdjava);
         final ParseUser currentUser = ParseUser.getCurrentUser();
+
 
         uporabniskoIme.setText(currentUser.getUsername());
 
@@ -57,7 +63,6 @@ public class RacunFragment extends Fragment {
 
                   }
       });
-
 
         return v;
     }

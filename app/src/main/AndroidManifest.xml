@@ -13,6 +13,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         >
         <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +29,6 @@
         <activity android:name=".Activity2"></activity>
         <activity android:name=".DnevniActivity"></activity>
         <activity android:name=".NocniActivity"></activity>
-        <activity android:name=".RegistracijaActivity"></activity>
 
 
 

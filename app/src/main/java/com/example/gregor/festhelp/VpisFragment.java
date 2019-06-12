@@ -56,7 +56,7 @@ public class VpisFragment extends Fragment {
                 FragmentTransaction fragmentTransaction2 = fragmentManager2.beginTransaction();
                 RegistracijaFragment registracijaFragment = new RegistracijaFragment();
                 fragmentTransaction2.addToBackStack("xyz");
-                fragmentTransaction2.hide(VpisFragment.this);
+                //fragmentTransaction2.hide(VpisFragment.this);
                 fragmentTransaction2.replace(R.id.fragment_container, registracijaFragment).commit();
             }
         });
