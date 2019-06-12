@@ -18,14 +18,14 @@ public class DnevniActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-        Button nazaj = (Button) findViewById(R.id.nazajButton);
-
-        nazaj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(DnevniActivity.this, MainActivity.class);
-                startActivity(in);
-            }
-        });
+//        Button nazaj = (Button) findViewById(R.id.nazajButton);
+//
+//        nazaj.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent in = new Intent(DnevniActivity.this, MainActivity.class);
+//                startActivity(in);
+//            }
+//        });
     }
 }
